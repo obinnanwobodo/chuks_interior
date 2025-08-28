@@ -1,0 +1,124 @@
+.genhero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* 👈 give your hero a fixed or min height */
+  overflow: hidden;
+  
+}
+
+.imgdiv{
+  position: relative;
+  height: 100%;
+   width: 100%;
+  
+   
+}
+
+
+.herobgimg{
+    position: absolute;
+  width: 100%;
+  height: 100%;
+   object-fit: cover;
+  background-position: center;
+      z-index: -1; 
+ object-fit: cover; /* this works with next/image + fill */
+}
+
+
+
+.heroContent{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; /* 👈 absolute so it floats above everything */
+  top: 9.5%;
+  left: 26.8%;
+  color: white;
+  z-index: 1; /* on top */
+  text-align: center;
+  justify-content: center ;
+ 
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0; /* sits above image, below text */
+}
+
+.premium, .funiture{
+  font-size: 73px;
+  font-family: system-ui;
+  font-weight: 700;
+}
+
+.premium{
+  color: #fbf6e4
+
+}
+
+.funiture{
+  position: relative;
+  color: #ffc105;
+  bottom: 35px;
+}
+
+.mer{
+  position: relative;
+  bottom: 39px;
+}
+
+.discover{
+    position: relative;
+  bottom: 72px;
+  font-size: 24px;
+  color: #fbf6e4e6;
+  font-family: system-ui;
+
+}
+
+.buttongen{
+  display: flex;
+    position: relative;
+  bottom: 49.5px;
+  font-size: 18px;
+  gap: 65px;
+  font-family: system-ui;
+  font-weight: 500;
+right: 43px;
+}
+
+.btn1{
+    background-color:#ffc105 ;
+  padding: 9px;
+  border-radius: 8px;
+  width: 125%;
+  white-space: nowrap;
+  color: #000000;
+
+}
+
+
+.btn2{
+  border: 2px solid #ffc105 ;
+  color: #ffc105;
+  padding: 7px;
+  border-radius: 8px;
+  width: 125%;
+
+}
+
+.located{
+  font-size: 14px;
+  background-color: #00000080;
+  padding: 10px;
+  border-radius: 20px;
+  color: #fbf6e4;
+  font-family: system-ui;
+font-weight: 500;
+  position: relative;
+  bottom: 21px;
+width:70%;
+}

@@ -1,0 +1,107 @@
+.aboutgen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background-color: #fbf6e4;
+padding-top: 65px;
+height: 100vh;
+
+}
+
+.abt{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system;
+}
+
+.abt::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    background-color: #ffc105;
+    margin-top: 80px;
+right: 623px;
+}
+
+.leading{
+font-size: 20px;
+    font-family: system-ui, -apple-system;
+color: #000000cc;
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+
+.boxgen{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center ;
+    gap: 20px;
+}
+
+
+.boxgen h1{
+    font-size: 20px;
+    font-family: system-ui, -apple-system;
+color: #000000;
+font-weight: 500;
+}
+
+
+.boxgen p{
+    font-size: 16px;
+    font-family: system-ui, -apple-system;
+color: #000000b2;
+}
+
+.boxgen svg{
+    width: 32px;
+    height: 32px;
+    color: #ffc105;
+}
+
+.box1, .box2, .box3, .box4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffcf5;
+    padding: 25px;
+     min-width: 200px; /* optional: prevents shrinking too much */
+  height: 230px;
+gap: 15px;
+  border-radius: 8px;
+border: 1px solid rgb(248, 232, 178);
+}
+
+
+.box1 p, .box2 p, .box3 p, .box4 p{
+    text-align: center;
+}
+
+
+
+.box3 svg{
+stroke-width: 0.6px;
+}
+
+
+
+
+.box1 svg{
+margin-top: 5px;
+}
+
+.box2 p{
+margin-bottom: 11px;
+}
+
+.box3 p{
+margin-bottom: 33px;
+
+}
