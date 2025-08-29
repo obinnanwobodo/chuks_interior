@@ -5,7 +5,7 @@
     align-items: center;
 background-color: #fbf6e4;
 padding-top: 65px;
-height: 100vh;
+padding-bottom: 80px;
 
 }
 
@@ -41,7 +41,7 @@ text-align: center;
     margin-top: 70px;
     justify-content: center;
     align-items: center ;
-    gap: 20px;
+    gap: 30px;
 }
 
 
@@ -72,7 +72,7 @@ color: #000000b2;
     align-items: center;
     background-color: #fffcf5;
     padding: 25px;
-     min-width: 200px; /* optional: prevents shrinking too much */
+     min-width: 282px; /* optional: prevents shrinking too much */
   height: 230px;
 gap: 15px;
   border-radius: 8px;
@@ -104,4 +104,85 @@ margin-bottom: 11px;
 .box3 p{
 margin-bottom: 33px;
 
+}
+
+
+
+
+
+.missiongen{
+    display: flex;
+gap: 100px;
+margin-top: 30px;
+background-color: #fffcf5;
+padding: 43px;
+border-radius: 20px;
+width:90.8%;
+}
+
+.ourmission{
+    font-size: 30px;
+    font-family: system-ui;
+    font-weight: 700;
+    padding-bottom: 18px;
+}
+
+.p1, .p2{
+      font-size: 18px;
+    font-family: system-ui;
+    color: #000000cc;
+    white-space: nowrap;
+}
+
+.p1{
+    padding-bottom: 23px;
+}
+
+.wcugen{
+    position: relative;
+    background-color: #ffc1051a;
+    padding: 25px;
+    border-radius: 15px;
+    min-width: 550px;
+    right: 68px;
+    top: 15px;
+    max-height: 280px;
+}
+
+
+.wcu{
+     font-size: 24px;
+    font-family: system-ui;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.genlist{
+    display: flex;
+    flex-direction: column;
+     font-size: 16px;
+    font-family: system-ui;
+    color: #000000cc;
+
+}
+
+.genlist ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.li1, .li2, .li3, .li4, .li5, .li6{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    
+}
+
+.li1 svg, .li2 svg, .li3 svg, .li4 svg, .li5 svg, .li6 svg{
+color: #ffc105;
+width: 20px;
+height: 20px;
 }
