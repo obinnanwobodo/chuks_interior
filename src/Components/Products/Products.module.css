@@ -1,3 +1,49 @@
 .productsgen{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourprod{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: system-ui;
+}
+
+
+.ourprod::after{
+ content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    background-color: #ffc105;
+    margin-top: 80px;
+right: 623px;
+
+
+}
+
+.discover{
+     font-size: 20px;
+    color: #000000cc;
+    font-family: system-ui;
+    margin-top: 30px;
+text-align: center;
+}
+
+
+.mappinggen{
+    display: flex;
+    gap: 20px;
+}
+
+.eachofthem{
+    border-radius: 10px;
+
+}
+
+.imagediv img{
+width: 350px;
+height: 300px;
 }
