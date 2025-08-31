@@ -69,6 +69,7 @@ const Getintouch = () => {
 
 <div className={styles.formndbusi}>
       <form className={styles.formgen}>
+        <div className={styles.formtexts}>
         <h2 className={styles.suam}>Send Us a Message</h2>
 
         <div className={styles.fndlastname}>
@@ -92,9 +93,9 @@ const Getintouch = () => {
         </div>
 
         <div className={styles.messagegen}>
-          <h3>Message</h3>
+          <h3 className={styles.message}>Message</h3>
 
-          <input
+          <textarea
             type="text"
             placeholder="Tell us about your funiture or merchandise needs..."
           />
@@ -103,6 +104,8 @@ const Getintouch = () => {
         <button className={styles.submit} type="submit">
           Send Message
         </button>
+
+        </div>
       </form>
 
       <div className={styles.busndvisit}>

@@ -1,0 +1,50 @@
+.genfooter{
+    background-color: black;
+    height: 100vh;
+    color: #fefefe;
+    font-family: system-ui;
+
+}
+
+.cide{
+    font-size: 24px;
+    color: #ffc105;
+    font-weight: 700;
+    font-family: system-ui;
+}
+
+.trusted{
+    font-size: 16px;
+    color: #fbf6e4cc;
+    font-family: system-ui;
+
+}
+
+.socialgen svg{
+        width: 20px;
+    height: 20px;
+    color: #ffc105;
+    border-radius: 50%;
+}
+
+.iconcircle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;     /* circle size */
+  height: 40px;    /* circle size */
+  border-radius: 50%;
+  background-color: #ffc10533;
+}
+
+.grp2 p{
+    font-size: 18px;
+    font-family: system-ui;
+color: #ffc105;
+}
+
+.grp2 a{
+    font-size: 16px;
+    font-family: system-ui;
+color: #fbf6e4cc;
+}
