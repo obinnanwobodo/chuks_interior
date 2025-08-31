@@ -64,15 +64,21 @@ const Footer = () => {
           <p>Contact Information</p>
           <div className={styles.addresses}>
             <CiLocationOn />
-            <h3>145, Olojo Drive, Opp, FCMB</h3>
+            <div>
+<h3>145, Olojo Drive, Opp, FCMB</h3>
             <h3>Ojo, Alaba RD</h3>
             <h3>Lagos, Nigeria</h3>
+            </div>
+            
           </div>
 
           <div className={styles.numbergen}>
             <IoCallOutline />
-            <a href="tel:07035368835">07035368835</a> <br />
+            <div>
+<a href="tel:07035368835">07035368835</a> <br />
             <a href="tel:08089579080">08089579080</a>
+            </div>
+            
           </div>
 
 

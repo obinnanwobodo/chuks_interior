@@ -1,10 +1,80 @@
 .genfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
     background-color: black;
     height: 100vh;
     color: #fefefe;
     font-family: system-ui;
 
 }
+
+.first3{
+display: flex;
+gap: 180px;
+position: relative;
+bottom: 70px;
+
+}
+
+
+.grp1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.instagen, .tiktokgen, .facebookgen{
+ font-size: 14px;
+color: #fbf6e4cc;
+    font-family: system-ui;
+    padding-bottom: 8px;
+}
+
+.instagen a:hover, .tiktokgen a:hover, .facebookgen a:hover{
+background-color: #ffc105;
+border-radius: 8px;
+color: black;
+}
+
+.iconcircle:hover{
+    background-color: #ffc105;
+}
+
+.iconcircle  svg:hover{
+    color: black;
+    
+}
+
+
+.grp2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 80px;
+    gap: 10px;
+}
+
+.grp3{
+   display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 70px;
+      gap: 10px;
+}
+
+.addresses, .numbergen, .emailgen{
+    display: flex;
+    gap: 10px;
+}
+
+.numbergen svg{
+    position: relative;
+    top: 12px;
+}
+
+
 
 .cide{
     font-size: 24px;
@@ -41,6 +111,8 @@
     font-size: 18px;
     font-family: system-ui;
 color: #ffc105;
+    font-weight: 500;
+
 }
 
 .grp2 a{
@@ -48,3 +120,83 @@ color: #ffc105;
     font-family: system-ui;
 color: #fbf6e4cc;
 }
+
+.grp3 p{
+    font-size: 18px;
+    color: #ffc105;
+    font-weight: 500;
+    font-family: system-ui;
+
+}
+
+.grp3 svg{
+    width: 20px;
+    height: 20px;
+    color: #ffc105;
+}
+
+.addresses h3{
+    font-size: 14px;
+color: #fbf6e4cc;  
+}
+
+.addresses svg{
+stroke-width: 1;
+}
+
+.numbergen a{
+  font-size: 14px;
+color: #fbf6e4cc;  
+}
+
+
+.emailgen a{
+    font-size: 14px;
+color: #fbf6e4cc;
+    font-family: system-ui;
+
+}
+
+.centre{
+    
+}
+
+.centre h2{
+    font-size: 18px;
+    color: #ffc105;
+    font-weight: 500;
+    font-family: system-ui;
+
+}
+
+.centre a{
+    font-size: 14px;
+color: #fbf6e4cc;
+    font-family: system-ui;
+
+}
+
+.lastset {
+    font-size: 14px;
+color: #fbf6e4cc;
+    font-family: system-ui;
+
+}
+.lastset svg{
+    color: green;
+}
+
+.first3::after{
+ content: '';
+ position: absolute;
+ background-color: #806b2e;
+ width: 95%;
+ height: 0.1px;
+ justify-content: center;
+ align-items: center;
+ margin-top: 320px;
+ margin-left: 20px;
+
+}
+
+
