@@ -1,0 +1,227 @@
+
+.getgen{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    background-color: #fbf6e8;
+    width: 100%;
+    padding: 70px;
+}
+
+.git{
+font-size: 48px;
+font-weight: 700;
+font-family: system-ui;
+}
+
+.git::after{
+  content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    background-color: #ffc105;
+    margin-top: 85px;
+right: 623px;
+
+}
+
+
+.ready{
+    padding-top: 40px;
+font-family: system-ui;
+font-size: 20px;
+color: #000000cc;
+text-align: center;
+}
+
+
+.boxes{
+    display: flex;
+gap: 30px;
+padding-top: 60px;
+
+}
+
+.box1, .box2, .box3, .box4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+background-color: #fffcf5;
+padding: 10px;
+min-width: 270px;
+min-height: 220px;
+border: 1px solid rgb(248, 232, 178);
+border-radius: 10px;
+}
+
+.box2 svg{
+    margin-bottom: 20px;
+}
+
+.box3 svg, .box4 svg{
+
+    margin-bottom: 40px;
+
+}
+
+ .box3 a, .box4 a{
+    position: relative;
+    bottom: 38px;
+
+}
+
+.box2 a{
+  position: relative;
+    bottom: 25px;
+
+}
+
+ .box3 h2, .box4 h2{
+    position: relative;
+    bottom: 38px;
+
+}
+
+.box2 h2{
+    position: relative;
+    bottom: 20px;
+}
+
+
+.boxes svg{
+width: 24px;
+height: 24px;
+color: #ffc105;
+}
+
+.boxes h2{
+    font-size: 18px;
+    font-weight: 500;
+font-family: system-ui;
+}
+
+.boxes a{
+  font-size: 16px;
+font-family: system-ui;
+color: #000000b2;
+text-decoration: underline;
+}
+
+
+.boxes p{
+    font-size: 16px;
+font-family: system-ui;
+color: #000000b2;
+}
+
+
+.suam, .bh, .vos{
+    font-size: 24px;
+font-family: system-ui;
+font-weight: 500;
+
+}
+
+
+.formgen h3{
+    font-size: 14px;
+font-family: system-ui;
+font-weight: 500;
+}
+
+.formgen input{
+    font-size: 14px;
+font-family: system-ui;
+}
+
+.submit{
+    font-size: 18px;
+    background-color: #ffc105;
+    padding: 10px;
+    width: 400px;
+    font-weight: 500;
+    border-radius: 10px;
+font-family: system-ui;
+
+}
+
+.dtandtime h2{
+    font-size: 16px;
+    color: #000000cc;
+font-family: system-ui;
+
+}
+
+.dtandtime h3{
+    font-size: 16px;
+    color: #000000;
+font-family: system-ui;
+font-weight: 500;
+}
+
+.bh svg, .icnndvisit svg{
+    width: 24px;
+    height: 24px;
+    color: #ffc105;
+}
+
+.exp{
+    font-size: 16px;
+    color: #000000cc;
+font-family: system-ui;
+
+}
+
+.cc svg{
+    width: 20px;
+    height: 20px;
+    color: #ffc105;
+}
+
+.cc h2{
+    font-size: 16px;
+     color: #000000cc;
+font-family: system-ui;
+}
+
+
+
+.formndbusi{
+    display: flex;
+}
+
+
+
+
+
+
+
+.formgen{
+    display: flex;
+    flex-direction: column;
+/* position: relative;
+right: 100px; */
+    padding-top: 80px;
+background-color: #fffcf5;
+border-radius: 10px;
+padding: 20px;
+position: relative;
+top: 60px;
+width: 550px;
+height: 650px;
+}
+
+.fndlastname{
+display: flex;
+gap: 12px;
+
+}
+
+.fndlastname input{
+    border: 1px solid rgb(248, 232, 178) ;
+    border-radius: 10px;
+    padding: 10px;
+}

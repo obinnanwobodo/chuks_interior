@@ -5,7 +5,9 @@ padding: 20px;
 padding-top: 18px;
 align-items: center;
 background-color: #fffcf5;
-scroll-behavior: smooth;
+position: fixed;
+width: 100%;
+z-index: 999;
 }
 .logoauthor{
     display: flex;

@@ -6,6 +6,7 @@ import heroimg from "../../../public/Images/hero-furniture-uixT0qoA.jpg";
 
 const Hero = () => {
   return (
+    <div className={styles.wrapper}>
     <div className={styles.genhero}>
 
 
@@ -56,6 +57,7 @@ const Hero = () => {
 
 
 
+    </div>
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Products.module.css";
 import officechair from "../../../public/Images/gemini chair.png";
 import parlor from "../../../public/Images/home furniture chuks.jpg";
-import merchandise from "../../../public/Images/chuks home merchandise pic.jpg";
+import mercha from "../../../public/Images/merchandisend.jpg";
 import Image from "next/image";
 
 const array = [
@@ -10,6 +10,7 @@ const array = [
     imgsrc: officechair,
     bgcolor: "#fbf6e4",
     title: "Premium Office Furniture",
+    titleClass: "premium",
     alt: "office funiture image",
     description:
       "Executive desks, ergonomic chairs, filing \ncabinets, and professional office solutions \ndesigned for productivity and comfort.",
@@ -19,6 +20,7 @@ const array = [
       "Ergonomic office chairs",
       "Filing cabinets and storage",
       "Conference tables",
+      "Reception desks & front counters",
     ],
     learnmore: "#contact",
   },
@@ -27,6 +29,7 @@ const array = [
     imgsrc: parlor,
     bgcolor: "#fbf6e4",
     title: "Quality Home Furniture",
+    titleClass: "quality",
     alt: "parlor funiture image",
     description:
       "Beautiful home furniture including dining sets, \nsofas, bedroom furniture, and living room \nessentials for every home.",
@@ -42,15 +45,15 @@ const array = [
   },
 
   {
-    imgsrc: merchandise,
+    imgsrc: mercha,
     bgcolor: "#fbf6e4",
-    title: "Home Merchandise & Accessories",
+    title: "Home Merchandise & \nAccessories",
+    titleClass: "mercha",
     alt: "home merchandise image",
     description:
       "Complete your space with our selection of \nhome accessories, storage solutions, and \ndecorative merchandise.",
     head2: "What We Offer:",
     offers: [
-      "Storage and organization",
       "Decorative accessories",
       "Lighting solutions",
       "Shelving and display units",
@@ -77,28 +80,61 @@ const Products = () => {
               <Image src={each.imgsrc} alt={each.alt} />
             </div>
 
-            <div className={styles.gentexts}   style={{ backgroundColor: each.bgcolor }}>
-              <h2 className={styles.title}>{each.title}</h2>
-              <p className={styles.desc} style={{ whiteSpace: "pre-line" }}>{each.description}</p>
-              <h2 className={styles.wcu}>{each.head2}</h2>
+            <div
+              className={styles.gentexts}
+              style={{ backgroundColor: each.bgcolor }}
+            >
+              <h2
+                className={`${styles.title} ${styles[each.titleClass]}`}
+                style={{ whiteSpace: "pre-line" }}
+              >
+                {each.title}
+              </h2>
+              <p className={styles.desc} style={{ whiteSpace: "pre-line" }}>
+                {each.description}
+              </p>
+              <h2 className={styles.wwo}>{each.head2}</h2>
 
               {each.offers.map((offer, i) => (
-                <li  className={styles.listgen} key={i}>{offer}</li>
+                <li className={styles.listgen} key={i}>
+                  {offer}
+                </li>
               ))}
 
-               <a href={each.learnmore} className={styles.learnmorebtn}>Learn More</a>
-
-               
+              <a href={each.learnmore} className={styles.learnmorebtn}>
+                {" "}
+                <button>Learn More</button>{" "}
+              </a>
             </div>
-
-
           </div>
         ))}
       </div>
 
       <div className={styles.vmp}>
-<a href="product">View More Products</a>
+        <a href="product" className={styles.vmpLink}>
+          <button>View More Products</button>
+        </a>
       </div>
+
+
+
+<div className={styles.lookinggen}>
+
+<h2>Can't Find What You're Looking For?</h2>
+<h3>We have an extensive inventory that's constantly updated. Contact us <br />directly to discuss your specific furniture and merchandise needs.</h3>
+
+<div className={styles.btngenn}>
+
+<button  className={styles.btn1}> <a href="#contact">Call Us Now</a></button>
+<button  className={styles.btn2}> <a href="#contact">Visit Our Store</a></button>
+
+
+</div>
+
+</div>
+
+
+
 
 
     </div>

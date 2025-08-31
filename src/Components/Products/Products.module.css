@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 70px;
+    padding-bottom: 90px;
 }
 
 .ourprod{
@@ -35,15 +37,201 @@ text-align: center;
 
 .mappinggen{
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 70px;
 }
 
 .eachofthem{
+    display: flex;
+    flex-direction: column;
+border: 1px solid rgb(248, 232, 178);
     border-radius: 10px;
-
+min-height: 660px;
 }
 
 .imagediv img{
-width: 350px;
-height: 300px;
+    border: none;
+width: 370px;
+height: 290px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+.gentexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 15px;
+    gap: 15px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+font-size: 24px;
+font-weight: 700;
+font-family: system-ui;
+line-height: 1.6;
+}
+
+.desc{
+font-size: 16px;
+color: #000000cc;
+font-family: system-ui;
+
+}
+
+
+.wwo{
+    font-size: 18px;
+font-family: system-ui;
+font-weight: 500;
+}
+
+.listgen{
+     font-size: 16px;
+font-family: system-ui;
+color: #000000b2;
+}
+
+.listgen::marker{
+    color: #ffc105;
+}
+
+
+.learnmorebtn {
+    font-size: 14px;
+    background-color: #ffc105;
+    padding: 12px;
+    border-radius: 8px;
+width: 100%;
+font-weight: 600;
+}
+
+.learnmorebtn button{
+    width: 305px;
+}
+.premium{
+    
+}
+
+.vmp{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+    font-weight: 700;
+  background-color: black;
+  color: #ffc105;
+  padding: 10px;
+  border-radius: 10px;
+width: 40%;
+}
+
+.vmp button{
+    cursor: pointer;
+}
+
+.vmp:hover{
+    background-color: #ffc105;
+    color: black;
+}
+
+.vmp a:hover{
+    color: black;
+}
+
+
+
+
+
+.lookinggen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:130px;
+    background-color: #ffc1050d;
+    padding: 20px;
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+
+.lookinggen h2{
+    font-size: 30px;
+font-family: system-ui;
+font-weight: 700;
+}
+
+
+.lookinggen h3{
+    color: #000000cc;
+    font-size: 20px;
+}
+
+.btngenn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+padding-top: 15px;
+
+}
+
+.btn1{
+    background-color: #ffc105;
+    border-radius: 10px;
+    padding: 10px;
+    width: 160px;
+    font-size: 16px;
+font-family: system-ui;
+font-weight: 500;
+}
+
+.btn1:hover{
+background-color: #c49c26;
+animation: jump 0.9s ease infinite;
+}
+
+
+ .btn2{
+    border: 2px solid #ffc105;
+     border-radius: 10px;
+    padding: 10px;
+    width: 180px;
+    font-size: 16px;
+font-family: system-ui;
+font-weight: 500;
+color: #ffc105;
+ }
+
+ .btn2:hover{
+    background-color: #ffc105;
+    color: black;
+
+ }
+
+ .btn2 a:hover{
+    color: black;
+
+ }
+
+
+ 
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(0);
+  }
 }
