@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import Bgimg from "./helpers/bgimg";
 import Image from "next/image";
 import heroimg from "../../../public/Images/hero-furniture-uixT0qoA.jpg";
 
