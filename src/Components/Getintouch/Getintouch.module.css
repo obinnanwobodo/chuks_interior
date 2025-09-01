@@ -1,6 +1,6 @@
 
 .getgen{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-self: center;
     align-items: center;

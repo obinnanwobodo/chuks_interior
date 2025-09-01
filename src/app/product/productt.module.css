@@ -19,6 +19,11 @@ padding-left: 20px;
 
 }
 
+.icnndhome a{
+  color: #000000;
+
+}
+
 .icnndhome a:hover{
   color: #ffc105;
 }
