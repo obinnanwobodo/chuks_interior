@@ -1,5 +1,5 @@
 .productsgen{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -268,5 +268,314 @@ color: #ffc105;
   }
   60% {
     transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVEESS */
+
+
+@media (max-width: 768px) {
+
+.productsgen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px 60px; /* Adjusted padding for mobile */
+  background-color: #fefefe;
+  text-align: center;
+
+}
+
+.ourprod {
+  font-size: 36px; /* Adjusted font size for mobile */
+  font-weight: 700;
+  font-family: system-ui, sans-serif;
+  color: #000000;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.ourprod::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 80px;
+  background-color: #ffc105;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.discover {
+  font-size: 16px; /* Adjusted font size for mobile */
+  color: #000000cc;
+  font-family: system-ui, sans-serif;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mappinggen {
+  display: flex;
+  flex-direction: column; /* Stack product cards vertically on mobile */
+  gap: 60px;
+  margin-top: 40px;
+  width: 100%; /* Ensure full-width stacking */
+}
+
+.eachofthem {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(248, 232, 178);
+  border-radius: 10px;
+  height: auto; /* Let height adjust to content */
+  min-height: 500px; /* Keep a minimum height for consistency */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.eachofthem:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.imagediv img {
+  width: 100%; /* Make image full-width */
+  height: 250px; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.gentexts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 15px;
+  gap: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.desc {
+  font-size: 14px;
+  color: #000000cc;
+  font-family: system-ui, sans-serif;
+}
+
+.wwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  font-size: 16px;
+  font-family: system-ui, sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+.listgen {
+  font-size: 14px;
+  font-family: system-ui, sans-serif;
+  color: #000000b2;
+}
+
+.listgen::marker {
+  color: #ffc105;
+}
+
+
+
+
+/* Fix the alignment of the icon and text within the list item */
+.li1, .li2, .li3, .li4, .li5, .li6 {
+  display: flex; /* Makes the list item a flex container */
+  align-items: flex-start; /* Aligns the icon to the top of the text */
+  gap: 10px; /* Provides space between the icon and the text */
+  text-align: left; /* Ensures the text is left-aligned */
+}
+
+/* Remove default margins from the paragraph tag to prevent misalignment */
+.li1 p, .li2 p, .li3 p, .li4 p, .li5 p, .li6 p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.learnmorebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  font-size: 14px;
+  background-color: #ffc105;
+  padding: 12px;
+  border-radius: 8px;
+  width: 80%; /* Make button full-width */
+  font-weight: 600;
+}
+
+
+.listgen li {
+    /* Use flexbox for each list item to align the bullet and text */
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Ensure text is left-aligned */
+}
+
+.vmp {
+  display: flex;
+  justify-content: center;
+  top: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: black;
+  color: #ffc105;
+  padding: 10px;
+  border-radius: 10px;
+  width: 95%; /* Adjust button width */
+}
+
+.lookinggen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 135px; /* Adjusted margin */
+  background-color: #ffc1050d;
+  padding: 20px;
+  width: 100%; /* Full width */
+  height: auto; /* Let height adjust to content */
+  border-radius: 20px;
+  gap: 15px;
+}
+
+.lookinggen h2 {
+  font-size: 24px;
+  font-family: system-ui, sans-serif;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+.lookinggen h3 {
+  color: #000000cc;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btngenn {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px;
+  padding-top: 15px;
+  width: 100%; /* Make button group full-width */
+}
+
+.btn1,
+.btn2 {
+  padding: 12px;
+  width: 100%; /* Make each button full-width */
+  text-align: center;
+  font-weight: 500;
+}
+
+.btn1 {
+  background-color: #ffc105;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.btn2 {
+  border: 2px solid #ffc105;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #ffc105;
+}
+
+}
+
+
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1199px) {
+
+  .productsgen {
+    padding: 70px 40px 90px;
+  }
+
+  .ourprod {
+    font-size: 42px;
+  }
+
+  .ourprod::after {
+        left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;;
+  }
+
+  .discover {
+    font-size: 18px;
+  }
+
+  .mappinggen {
+    flex-direction: row; /* Two columns for tablets */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  .eachofthem {
+    width: 45%; /* Two cards per row */
+    min-width: unset;
+  }
+
+  .imagediv img {
+    height: 290px;
+  }
+
+  .lookinggen {
+    margin-top: 100px;
+    padding: 30px;
+    width: 90%;
+  }
+
+  .lookinggen h2 {
+    font-size: 28px;
+  }
+
+  .lookinggen h3 {
+    font-size: 20px;
+  }
+
+  .btngenn {
+    flex-direction: row; /* Buttons side-by-side */
+    gap: 15px;
+    width: auto;
+  }
+
+  .vmp{
+    width: 500px;
   }
 }

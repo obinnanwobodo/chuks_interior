@@ -1,5 +1,5 @@
 .genfooter{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center ;
     align-items: center;
@@ -279,4 +279,212 @@ gap: 550px;
 
 .iconndwa a:hover{
     color: #ffc105;
+}
+
+
+
+/* RESPONSIVENESS */
+
+
+@media (min-width:0px) and (max-width: 1120px) {
+
+    .genfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: auto; /* Height is no longer fixed, adjusts to content */
+    color: #fefefe;
+    font-family: system-ui, sans-serif;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.first3 {
+    display: flex;
+    flex-direction: column; /* Stack columns vertically on mobile */
+    gap: 30px;
+    position: static;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.first3::after {
+    display: none; /* Hide the horizontal line on mobile */
+}
+
+.grp1, .grp2, .grp3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: static;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.cide {
+    font-size: 20px;
+    color: #ffc105;
+    font-weight: 700;
+}
+
+.trusted {
+    font-size: 14px;
+    color: #fbf6e4cc;
+}
+
+.grp2 p, .grp3 p {
+    font-size: 16px;
+    color: #ffc105;
+    font-weight: 500;
+}
+
+.grp2 a, .grp3 a {
+    font-size: 14px;
+    color: #fbf6e4cc;
+}
+
+.addresses, .numbergen, .emailgen {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically if needed */
+    gap: 5px;
+    align-items: center;
+}
+
+.addresses h3, .numbergen a, .emailgen a {
+    font-size: 14px;
+    color: #fbf6e4cc;
+    text-align: center;
+}
+
+.numbergen svg {
+    position: static;
+}
+
+.centre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.centre::after {
+    display: none; /* Hide the horizontal line on mobile */
+}
+
+.items {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px;
+    align-items: center;
+}
+
+.lastset {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    top: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.yearndserving {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lastset h2, .lastset h3, .lastset p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+
+}
+
+
+
+
+
+
+@media (min-width:1121px) and (max-width: 1199px) {
+
+    .genfooter {
+        padding: 60px 40px;
+    }
+
+    .first3 {
+        flex-direction: row; /* Arrange columns horizontally */
+        gap: 80px;
+        position: relative;
+        bottom: 0;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .grp1, .grp2, .grp3 {
+        align-items: flex-start;
+    }
+
+    .grp2{
+        padding-left: 20px;
+    }
+
+    .first3::after {
+        display: block; /* Show the line on tablets */
+        content: '';
+        position: absolute;
+        background-color: #806b2e;
+        width: 90%;
+        height: 0.1px;
+        left: 5%;
+        margin-top: 320px;
+    }
+
+    .centre {
+        margin-top: 60px;
+    }
+
+    .centre::after {
+        display: block; /* Show the line on tablets */
+        content: '';
+        position: absolute;
+        background-color: #806b2e;
+        width: 80%;
+        height: 0.1px;
+        left: 10%;
+        margin-top: 140px;
+    }
+
+    .items {
+        flex-direction: row; /* Arrange links horizontally */
+        gap: 20px;
+    }
+
+    .lastset {
+        flex-direction: row;
+        justify-content: space-between;
+        top: 80px;
+    }
+
+    .yearndserving {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .yearndserving h3, .yearndserving p {
+        padding: 0;
+    }
+
+    .lastset h2, .lastset h3, .lastset p {
+        font-size: 14px;
+    }
 }

@@ -546,3 +546,278 @@ gap: 550px;
 .iconndwa a:hover{
     color: #ffc105;
 }
+
+
+
+
+
+  /* RESPONSIVENESS */
+
+@media (max-width: 1105px) {
+
+
+  /* Looking for more section */
+.lookinggen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px; /* Adjusted for mobile spacing */
+    background-color: #ffc1050d;
+    padding: 30px 20px;
+    width: 100%; /* Full width */
+    height: auto;
+    border-radius: 20px;
+    gap: 15px;
+    margin-left: 0;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.lookinggen h2 {
+    font-size: 24px; /* Adjusted font size */
+    font-weight: 700;
+    text-align: center;
+}
+
+.lookinggen h3 {
+    color: #000000cc;
+    font-size: 16px; /* Adjusted font size */
+    text-align: center;
+}
+
+.btngenn {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px;
+    padding-top: 15px;
+    width: 100%; /* Make button group full-width */
+}
+
+.btn1, .btn2 {
+    width: 100%; /* Buttons take full width */
+    padding: 12px;
+    text-align: center;
+}
+
+/* Footer section */
+.genfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: auto; /* Adjust height to content */
+    color: #fefefe;
+    font-family: system-ui;
+    width: 100%;
+    margin-top: 40px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.first3 {
+    display: flex;
+    flex-direction: column; /* Stack columns vertically */
+    gap: 30px;
+    position: static;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.first3::after, .centre::after {
+    display: none; /* Hide horizontal lines on mobile */
+}
+
+.grp1, .grp2, .grp3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: static;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.grp2 a, .grp3 a, .addresses h3, .numbergen a, .emailgen a, .centre a, .items a {
+    font-size: 14px;
+    text-align: center;
+}
+
+.addresses, .numbergen, .emailgen {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.centre {
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px;
+    align-items: center;
+}
+
+.lastset {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    top: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.yearndserving {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+
+}
+
+@media (min-width: 1200px) and (max-width: 1295px) {
+ .grp1 {
+
+
+margin-left: 40px;
+
+}
+
+}
+
+
+
+
+@media (min-width: 1400px) {
+ .centre::after {
+display: none;
+ }
+
+  .first3::after {
+  content: '';
+  display: none;
+  }
+ 
+ 
+}
+
+
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* Looking for more section */
+  .lookinggen {
+    margin-top: 80px;
+    padding: 40px;
+    width: 90%;
+    margin: 80px auto 0; /* Centered with top margin */
+  }
+
+  .lookinggen h2 {
+    font-size: 30px;
+  }
+
+  .lookinggen h3 {
+    font-size: 20px;
+  }
+
+  .btngenn {
+    flex-direction: row; /* Arrange buttons side-by-side */
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .btn1 {
+    width: 160px;
+  }
+
+  .btn2 {
+    width: 180px;
+  }
+
+  /* Footer section */
+  .genfooter {
+    
+    padding: 60px 40px;
+    
+  }
+
+  .first3 {
+    flex-direction: row; /* Arrange columns horizontally */
+    gap: 80px;
+    position: relative;
+    bottom: auto;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .first3::after {
+    content: '';
+    position: absolute;
+    background-color: #806b2e;
+    width: 90%;
+    height: 0.1px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 320px;
+  }
+
+  .grp1, .grp2, .grp3 {
+    align-items: flex-start;
+    position: static;
+    right: auto;
+  }
+
+  .addresses, .numbergen, .emailgen {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .numbergen svg {
+    position: static;
+  }
+
+  .centre {
+    margin-top: 60px;
+  }
+
+  .centre::after {
+    content: '';
+    position: absolute;
+    background-color: #806b2e;
+    width: 80%;
+    height: 0.1px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 140px;
+  }
+
+  .items {
+    flex-direction: row; /* Arrange links horizontally */
+    gap: 20px;
+  }
+
+  .lastset {
+    flex-direction: row;
+    justify-content: space-between;
+    top: 80px;
+    width: 100%;
+    position: relative;
+  }
+
+  .yearndserving {
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+}

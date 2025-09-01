@@ -1,5 +1,5 @@
 .aboutgen{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -198,4 +198,239 @@ width:90.8%;
 color: #ffc105;
 width: 20px;
 height: 20px;
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVNESS */
+
+
+
+@media (max-width: 768px) {
+
+.aboutgen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbf6e4;
+    padding: 40px 20px; /* Reduced vertical padding for mobile */
+    text-align: center;
+}
+
+.abt {
+    font-size: 36px; /* Adjusted for mobile readability */
+    font-weight: 700;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #000000;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.abt::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 80px;
+    background-color: #ffc105;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.leading {
+    font-size: 16px; /* Adjusted for mobile readability */
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #000000cc;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.boxgen {
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap to the next line */
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px; /* Smaller gap for mobile */
+    padding: 0;
+}
+
+.box1, .box2, .box3, .box4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffcf5;
+    padding: 20px; /* Adjusted padding */
+    width: 100%; /* Full width for proper stacking */
+    max-width: 300px;
+    height: auto; /* Let height adjust to content */
+    min-height: 200px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(248, 232, 178);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.boxgen h1 {
+    font-size: 18px;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+}
+
+.boxgen p {
+    font-size: 14px;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #000000b2;
+    text-align: center;
+}
+
+.boxgen svg {
+    width: 28px;
+    height: 28px;
+    color: #ffc105;
+}
+
+.missiongen {
+    display: flex;
+    flex-direction: column; /* Stack mission sections vertically */
+    gap: 30px;
+    margin-top: 40px;
+    background-color: #fffcf5;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%; /* Full width */
+    box-sizing: border-box;
+}
+
+.ourmission {
+    font-size: 24px;
+    font-family: system-ui, sans-serif;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.p1, .p2 {
+    font-size: 16px;
+    font-family: system-ui, sans-serif;
+    color: #000000cc;
+    white-space: normal; /* Allow text to wrap */
+}
+
+.p1 {
+    padding-bottom: 15px;
+}
+
+ .wcugen {
+        position: static; /* Removes fixed positioning */
+        min-width: unset; /* Allows width to be flexible */
+        width: 100%; /* Makes it full-width */
+        padding: 20px; /* Adjusts padding for mobile */
+        max-height: unset; /* Removes max height constraint */
+    }
+
+    .wcu {
+        font-size: 20px; /* Smaller font size for mobile */
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .genlist {
+        font-size: 14px; /* Smaller font size for list items */
+    }
+
+    .li1 svg, .li2 svg, .li3 svg, .li4 svg, .li5 svg, .li6 svg{
+        min-width: 20px;
+        min-height: 20px;
+    }
+
+    .genlist ul {
+        gap: 8px; /* Reduced gap between list items */
+    }
+
+    .li1, .li2, .li3, .li4, .li5, .li6 {
+        align-items: flex-start; /* Aligns content to the top of the line */
+        text-align: left; /* Aligns text to the left */
+        gap: 8px;
+    }
+
+
+}
+
+
+
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    .aboutgen {
+        padding: 65px 40px 80px 40px;
+        text-align: center;
+    }
+
+    .abt {
+        font-size: 44px;
+    }
+
+    .abt::after {
+        left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;;
+    }
+
+    .leading {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+
+    .boxgen {
+        margin-top: 60px;
+        gap: 30px;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1000px; /* Optional: limit width on tablets */
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 45%; /* Two boxes per row */
+        max-width: none;
+    }
+
+    .missiongen {
+        flex-direction: row; /* Arrange mission sections horizontally */
+        gap: 50px;
+        margin-top: 50px;
+        padding: 40px;
+            align-items: stretch;
+    }
+
+    .ourmission {
+        font-size: 28px;
+    }
+
+    .p1, .p2 {
+        font-size: 18px;
+        white-space: normal;
+    }
+
+    .wcugen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: unset;
+        right: 0;
+        min-height: 490px;
+        gap: 10px;
+    }
 }
