@@ -36,6 +36,7 @@ height: 90px;
 font-size: 20px;
 font-family: system-ui;
 font-weight: 700;
+color: #000000;
 }
 
 .author p{
@@ -67,6 +68,7 @@ color: #ffc105;
   border: none;
   font-size: 24px;
   cursor: pointer;
+  color: #000000;
 }
 
 
