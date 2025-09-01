@@ -3,6 +3,7 @@
 .productPage {
   
   font-family: system-ui;
+  color: #fefefe;
 }
 
 .icnndhome{
@@ -14,6 +15,8 @@
 gap: 7px;
 padding-top: 30px;
 padding-left: 20px;
+  color: #000000;
+
 }
 
 .icnndhome a:hover{
@@ -75,6 +78,8 @@ padding-top: 10px;
   transition: all 0.3s ease;
   font-size: 1rem;
   font-weight: 500;
+  color: #000000;
+
 }
 
 .categoryBtn:hover {
