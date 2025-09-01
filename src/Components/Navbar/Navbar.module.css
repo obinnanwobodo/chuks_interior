@@ -56,6 +56,8 @@ color: #000000b2;
 font-size: 14px;
 font-family: system-ui;
 font-weight: 500;
+  color: #000000;
+
 }
 
  .navlinks a:hover{
@@ -111,7 +113,7 @@ height: 40px;
 
   .open {
     display: flex; /* show when toggled */
-    padding-left: 10px;
+    padding-left: 15px;
     margin-top: 20px;
   }
 
