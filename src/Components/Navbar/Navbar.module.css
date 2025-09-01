@@ -8,9 +8,28 @@ background-color: #fffcf5;
 position: fixed;
 width: 100%;
 z-index: 999;
+height: 90px;
 }
+
+.navlogodiv{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 1px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.navlogo{
+    padding: 5px;
+}
+
 .logoauthor{
     display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 50px;
 }
 
 .author h1{
@@ -36,4 +55,79 @@ color: #000000b2;
 font-size: 14px;
 font-family: system-ui;
 font-weight: 500;
+}
+
+ .navlinks a:hover{
+color: #ffc105;
+ }
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVNESS */
+
+@media (max-width: 768px) {
+
+.gennav{
+    width: 330px;
+}
+
+
+
+    .navlinks {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fffcf5;
+    width: 100%;
+    padding: 20px 0;
+    display: none; /* hidden by default */
+  }
+  
+
+  .navlogodiv{
+width: 40px;
+height: 40px;
+  }
+
+  .open {
+    display: flex; /* show when toggled */
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .author h1 {
+    font-size: 16px;
+  }
+
+  .author p {
+    font-size: 12px;
+  }
+}
+
+.logoauthor{
+    display: flex;
+ position: relative;
+    right:55px;
 }

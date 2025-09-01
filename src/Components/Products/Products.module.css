@@ -113,16 +113,23 @@ color: #000000b2;
     background-color: #ffc105;
     padding: 12px;
     border-radius: 8px;
-width: 100%;
+width: 305px;
 font-weight: 600;
 }
 
 .learnmorebtn button{
-    width: 305px;
+    width: 100%;
+    cursor: pointer;
 }
 
 .learnmorebtn:hover{
 background-color: #c49c26
+}
+
+.learnmorebtn a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -140,6 +147,12 @@ background-color: #c49c26
   padding: 10px;
   border-radius: 10px;
 width: 40%;
+}
+
+.vmp a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .vmp button{

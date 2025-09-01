@@ -26,7 +26,7 @@ const array = [
       "Conference tables",
       "Reception desks & front counters",
     ],
-    learnmore: "#contact",
+    learnmore: "/product",
   },
 
   {
@@ -45,7 +45,7 @@ const array = [
       "Coffee tables and side tables",
       "Entertainment centers",
     ],
-    learnmore: "#contact",
+    learnmore: "/product",
   },
 
   {
@@ -63,7 +63,7 @@ const array = [
       "Shelving and display units",
       "Home improvement items",
     ],
-    learnmore: "#contact",
+    learnmore: "/product",
   },
 ];
 
@@ -115,9 +115,9 @@ const Products = () => {
         ))}
       </div>
 
-      <div className={styles.vmp}>
-        <a href="product" className={styles.vmpLink}>
-          <button>View More Products</button>
+      <div className={styles.vmp} >
+        <a href="/product" className={styles.vmpLink}>
+          View More Products
         </a>
       </div>
 
