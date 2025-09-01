@@ -1,4 +1,6 @@
-import React from "react";
+'use client'
+
+import React, {useState} from "react";
 import styles from "./Getintouch.module.css";
 import { CiLocationOn } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
@@ -8,6 +10,47 @@ import { IoMdTime } from "react-icons/io";
 import { RiSendPlaneLine } from "react-icons/ri";
 
 const Getintouch = () => {
+
+  // form state
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState("");
+
+  // handle input change
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // handle submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      const res = await fetch("/api/sendMessage", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setStatus("Message sent successfully ✅");
+        setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
+      } else {
+        setStatus("Failed to send ❌");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("Error sending message ❌");
+    }
+  };
+
   return (
     <div className={`${styles.getgen}`}>
       <h2 className={styles.git}>Get In Touch</h2>
@@ -68,42 +111,75 @@ const Getintouch = () => {
       </div>
 
 <div className={styles.formndbusi}>
-      <form className={styles.formgen}>
+      <form className={styles.formgen} onSubmit={handleSubmit}>
         <div className={styles.formtexts}>
         <h2 className={styles.suam}>Send Us a Message</h2>
 
         <div className={styles.fndlastname}>
           <div className={styles.firstnamegen}>
             <h3>First Name</h3>
-            <input type="text" placeholder="Your First name" />
+            <input
+                  type="text"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  placeholder="Your First name"
+                  required
+                />
+
           </div>
 
           <div className={styles.lastnamegen}>
             <h3>Last Name</h3>
-            <input type="text" placeholder="Your Last name" />
+            <input
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  placeholder="Your Last name"
+                  required
+                />
           </div>
         </div>
         <div className={styles.ea}>
           <h3>Email Address</h3>
-          <input type="email" placeholder="your.email@example.com" />
+            <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="your.email@example.com"
+                required
+              />  
         </div>
         <div className={styles.phonenumgen}>
-          <h3>Phone Number</h3>
-          <input type="number" placeholder="Your phone number" />
+            <h3>Phone Number</h3>
+              <input
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                placeholder="Your phone number"
+              />
         </div>
 
         <div className={styles.messagegen}>
           <h3 className={styles.message}>Message</h3>
 
-          <textarea
-            type="text"
-            placeholder="Tell us about your funiture or merchandise needs..."
-          />
+           <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Tell us about your furniture or merchandise needs..."
+                required
+              />  
         </div>
 
         <button className={styles.submit} type="submit">
           Send Message
         </button>
+
+   {status && <p className={styles.status}>{status}</p>}
 
         </div>
       </form>

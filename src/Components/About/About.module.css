@@ -77,6 +77,15 @@ color: #000000b2;
 gap: 15px;
   border-radius: 8px;
 border: 1px solid rgb(248, 232, 178);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+  transform: translateY(-8px); /* moves up */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* optional shadow for effect */
 }
 
 

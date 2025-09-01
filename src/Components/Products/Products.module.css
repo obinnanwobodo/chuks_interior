@@ -47,6 +47,13 @@ text-align: center;
 border: 1px solid rgb(248, 232, 178);
     border-radius: 10px;
 min-height: 660px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.eachofthem:hover {
+  transform: translateY(-8px); /* moves up */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* optional shadow for effect */
 }
 
 .imagediv img{
@@ -113,9 +120,13 @@ font-weight: 600;
 .learnmorebtn button{
     width: 305px;
 }
-.premium{
-    
+
+.learnmorebtn:hover{
+background-color: #c49c26
 }
+
+
+
 
 .vmp{
     display: flex;

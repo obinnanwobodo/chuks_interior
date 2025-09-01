@@ -1,3 +1,259 @@
+/* productt.module.css */
+
+.productPage {
+  
+  font-family: system-ui;
+}
+
+.icnndhome{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: system-ui;
+  font-weight: 500;
+gap: 7px;
+padding-top: 30px;
+padding-left: 20px;
+}
+
+.icnndhome a:hover{
+  color: #ffc105;
+}
+
+.icnndhome svg{
+  width: 24px;
+  height: 24px;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+padding-top: 10px;
+
+}
+
+.hero h1::after{
+  content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    background-color: #ffc105;
+    margin-top: 55px;
+right: 623px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #555;
+padding-top: 10px;
+  font-weight: 500;
+
+}
+
+/* Category buttons */
+.categoryMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.categoryBtn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.categoryBtn:hover {
+  background: #eaeaea;
+}
+
+.active {
+  background: #ffc105;
+  color: black;
+  border-color: #222;
+}
+
+/* Product grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+  border-radius: 6px;
+}
+
+/* Enquiry button */
+.detailsBtn {
+  padding: 0.5rem 1rem;
+  background: #ffc105;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+  font-weight: 500;
+
+}
+
+.detailsBtn:hover {
+background-color: #c49c26;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lookinggen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:80px;
+    background-color: #ffc1050d;
+    padding: 20px;
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+    gap: 15px;
+    margin-left: 65px;
+}
+
+
+.lookinggen h2{
+    font-size: 30px;
+font-family: system-ui;
+font-weight: 700;
+}
+
+
+.lookinggen h3{
+    color: #000000cc;
+    font-size: 20px;
+}
+
+.btngenn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+padding-top: 15px;
+
+}
+
+.btn1{
+    background-color: #ffc105;
+    border-radius: 10px;
+    padding: 10px;
+    width: 160px;
+    font-size: 16px;
+font-family: system-ui;
+font-weight: 500;
+}
+
+.btn1:hover{
+background-color: #c49c26;
+animation: jump 0.9s ease infinite;
+}
+
+
+ .btn2{
+    border: 2px solid #ffc105;
+     border-radius: 10px;
+    padding: 10px;
+    width: 180px;
+    font-size: 16px;
+font-family: system-ui;
+font-weight: 500;
+color: #ffc105;
+ }
+
+ .btn2:hover{
+    background-color: #ffc105;
+    color: black;
+
+ }
+
+ .btn2 a:hover{
+    color: black;
+
+ }
+
+
+ 
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapperfoot{
+  width: 100%;
+  height: 100%;
+}
+
+
 .genfooter{
     display: flex;
     flex-direction: column;
@@ -7,7 +263,8 @@
     height: 100vh;
     color: #fefefe;
     font-family: system-ui;
-
+width: 100%;
+margin-top: 40px;
 }
 
 .first3{
@@ -220,7 +477,6 @@ color: #fbf6e4cc;
     display: flex;
     gap: 20px;
 }
-
 
 .items a:hover{
   color: #ffc105;

@@ -4,6 +4,10 @@ import officechair from "../../../public/Images/gemini chair.png";
 import parlor from "../../../public/Images/home furniture chuks.jpg";
 import mercha from "../../../public/Images/merchandisend.jpg";
 import Image from "next/image";
+import { IoIosArrowRoundBack } from "react-icons/io";
+
+
+
 
 const array = [
   {
@@ -66,6 +70,7 @@ const array = [
 const Products = () => {
   return (
     <div className={styles.productsgen}>
+
       <h2 className={styles.ourprod}>Our Product Range</h2>
       <p className={styles.discover}>
         Discover our comprehensive collection of high-quality furniture and

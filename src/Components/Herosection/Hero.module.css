@@ -107,6 +107,10 @@ right: 43px;
 
 }
 
+.anchor1  button:hover{
+background-color: #c49c26;
+}
+
 
 .btn2{
   border: 2px solid #ffc105 ;
@@ -115,6 +119,11 @@ right: 43px;
   border-radius: 8px;
   width: 125%;
 
+}
+
+.anchor2  button:hover{
+background-color: #ffc105;
+color: black;
 }
 
 .located{

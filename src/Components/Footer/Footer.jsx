@@ -54,10 +54,10 @@ const Footer = () => {
         </div>
         <div className={styles.grp2}>
           <p>Quick Links</p>
-          <a href="">Home</a>
-          <a href="">About Us</a>
-         <a href="">Products</a>
-          <a href="">Contact</a>
+          <a href="/">Home</a>
+          <a href="#about">About Us</a>
+         <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
         </div>
 
         <div className={styles.grp3}>
@@ -95,14 +95,13 @@ const Footer = () => {
       <div className={styles.centre}>
 <h2>Our Product Categories</h2>
 
-<div>
-<a href="">Office Furnitures</a>
-<a href="">Home Furnitures</a>
-<a href="">Executive Desks</a>
-<a href="">Office Chairs</a>
-<a href="">Quality Tables</a>
-<a href="">Dining Tables</a>
-<a href="">Home Merchandise</a>
+<div className={styles.items}>
+<a href="/product">Home Furnitures</a>
+<a href="/product">Executive Desks</a>
+<a href="/product">Office Chairs</a>
+<a href="/product">Quality Tables</a>
+<a href="/product">Dining Tables</a>
+<a href="/product">Home Merchandise</a>
 </div>
 
       </div>
@@ -111,14 +110,17 @@ const Footer = () => {
 
 
 <div className={styles.lastset}>
-  <div>
+  <div className={styles.yearndserving}>
 <p>© 2025 Chuks Interior Decor Enterprises. All rights reserved.</p>
 <h3>Serving quality furniture across Lagos, Nigeria</h3>
   </div>
 
-<h2>Designed By <a href="">Obinna Nwobodo</a> (Upscale Web Designs)</h2>
+<h2>Designed  By&nbsp;  <a href="">Obinna Nwobodo</a> &nbsp; (Upscale Web Designs)</h2>
+<div className={styles.iconndwa}>
 <div>
-<FaWhatsapp />
+  <FaWhatsapp />
+</div>
+
 <a href="tel:09024982829">09024982829</a>
 </div>
 
