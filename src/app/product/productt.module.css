@@ -54,7 +54,7 @@ padding-top: 10px;
     height: 4px;
     width: 100px;
     background-color: #ffc105;
-    margin-top: 55px;
+    margin-top: 60px;
 right: 623px;
 }
 
@@ -131,7 +131,7 @@ width: 100%;
 
 /* Enquiry button */
 .detailsBtn {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 2.3rem;
   background: #ffc105;
   color: black;
   border: none;
@@ -557,9 +557,18 @@ gap: 550px;
 
   /* RESPONSIVENESS */
 
-@media (max-width: 1105px) {
+@media (max-width: 768px) {
 
+.grid {
+grid-template-columns: 1fr;
+}
 
+.card img {
+height: auto;
+object-fit: contain;
+}
+
+/*
   /* Looking for more section */
 .lookinggen {
     display: flex;
@@ -685,6 +694,13 @@ gap: 550px;
     align-items: center;
 }
 
+.hero h1::after {
+right: auto;
+left: 50%;
+transform: translateX(-50%);
+margin-top: 60px;
+}
+
 
 }
 
@@ -710,7 +726,13 @@ display: none;
   content: '';
   display: none;
   }
- 
+  
+ .hero h1::after {
+right: auto;
+left: 50%;
+transform: translateX(-50%);
+margin-top: 60px;
+}
  
 }
 
@@ -824,4 +846,12 @@ display: none;
     gap: 15px;
     align-items: center;
   }
+
+  .hero h1::after {
+right: auto;
+left: 50%;
+transform: translateX(-50%);
+margin-top: 60px;
+}
+
 }

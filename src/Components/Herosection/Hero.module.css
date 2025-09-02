@@ -48,12 +48,15 @@
  
 }
 
+
 .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 0; /* sits above image, below text */
+position: absolute;
+inset: 0;
+background: radial-gradient(ellipse at bottom right, rgba(300, 193, 5, 0.4), transparent 50%), rgba(0, 0, 0, 0.5);
+z-index: 0;
+
 }
+
 
 .premium, .funiture{
   font-size: 73px;
@@ -278,6 +281,14 @@ width:70%;
   margin-top: 30px;
 }
 
+
+.overlay {
+position: absolute;
+inset: 0;
+background: radial-gradient(ellipse at bottom right, rgba(300, 193, 5, 0.4), transparent 50%), rgba(0, 0, 0, 0.5);
+z-index: 0;
+
+}
   
 }
 
@@ -389,6 +400,14 @@ white-space: nowrap;
         width: auto;
         margin-top: 30px;
     }
+    
+.overlay {
+position: absolute;
+inset: 0;
+background: radial-gradient(ellipse at bottom right, rgba(300, 193, 5, 0.4), transparent 50%), rgba(0, 0, 0, 0.5);
+z-index: 0;
+
+}
 }
 
 
