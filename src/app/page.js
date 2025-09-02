@@ -22,8 +22,7 @@ export default function Home() {
     content="Transform your space with Chuks Interior Decor. We provide elegant interiors, premium furniture, and stylish home solutions and merchandise across Lagos."
   />
 
-   <link rel="icon" href="/logo.ico" />
-        <link rel="shortcut icon" href="/logo.ico" />
+    
         
 </Head>
 
