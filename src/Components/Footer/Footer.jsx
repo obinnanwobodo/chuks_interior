@@ -18,11 +18,7 @@ const Footer = () => {
         <div className={styles.grp1}>
           <h2 className={styles.cide}>Chuks Interior Decor Enterprises</h2>
           <p className={styles.trusted}>
-            Your trusted partner for high-quality home and office furniture in
-            Lagos, Nigeria. <br />
-            We specialize in premium furniture pieces and merchandise that
-            transform spaces <br />
-            with elegance and functionality.
+           Transform your space with Chuks Interior Decor. We provide elegant interiors, <br />premium furniture, and stylish home solutions and merchandise across Lagos.
           </p>
 
           <div className={styles.socialgen}>
