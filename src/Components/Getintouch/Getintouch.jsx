@@ -166,7 +166,7 @@ const Getintouch = () => {
         <div className={styles.messagegen}>
           <h3 className={styles.message}>Message</h3>
 
-           <textarea
+           <textarea className={styles.placeholder}
                 name="message"
                 value={formData.message}
                 onChange={handleChange}

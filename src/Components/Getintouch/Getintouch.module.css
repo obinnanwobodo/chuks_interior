@@ -319,7 +319,9 @@ outline: none;
   vertical-align: top;      
 }
 
-
+.placeholder{
+    color:  #000000b2;
+}
 
 
     .submit{

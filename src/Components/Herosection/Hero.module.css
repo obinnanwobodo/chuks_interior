@@ -273,7 +273,7 @@ width:70%;
   font-family: system-ui, sans-serif;
   font-weight: 500;
   position: relative;
-  bottom: 20px;
+  bottom: 35px;
   width: auto; /* Let the content define the width */
   margin-top: 30px;
 }

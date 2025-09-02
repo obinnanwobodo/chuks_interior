@@ -161,7 +161,6 @@ width: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
-    
 }
 
 .vmp button{
@@ -442,14 +441,17 @@ color: #ffc105;
 .vmp {
   display: flex;
   justify-content: center;
+  align-items: center;
   top: 50px;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 700;
   background-color: black;
   color: #ffc105;
   padding: 10px;
   border-radius: 10px;
   width: 95%; /* Adjust button width */
+    height: 80px;
+
 }
 
 .lookinggen {
