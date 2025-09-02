@@ -109,7 +109,7 @@ const Products = () => {
 <a href="/">Home</a>
       </div>
 
-      {/* Hero Section */}
+      {/* Hero Section div */}
       <div className={styles.hero}>
         <h1>Our Products</h1>
         <p>Explore premium quality furniture designed for your home & office.</p>
