@@ -11,6 +11,7 @@ import { IoCallOutline } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoIosArrowRoundBack } from "react-icons/io";
+import Head from "next/head";
 
 
 const categories = [
@@ -79,7 +80,7 @@ const productCategoryMap = {
 const productImages = Array.from({ length: 43 }, (_, i) => ({
   id: i + 1,
   category: productCategoryMap[i + 1] || "All Products", // default, you can later assign real categories
-  img: `/Products/product${i + 1}.jpg`
+  img: `/Products/Product${i + 1}.jpg`
 }));
 
 const Products = () => {
@@ -92,6 +93,14 @@ const Products = () => {
 
   return (
     <div className={styles.productPage}>
+
+      <Head>
+  <title>Products | Chuks Interior Decor Enterprise – Interiors & Home Solutions in Lagos</title>
+  <meta
+    name="description"
+    content="Explore premium interiors and furniture from Chuks Interior Decor Enterprise in Lagos — executive desks, office chairs, dining tables, stylish décor, and quality merchandise."
+  />
+</Head>
 
        <div className={styles.icnndhome}>
 <div>
@@ -123,7 +132,7 @@ const Products = () => {
       <div className={styles.grid}>
         {filteredProducts.map((product) => (
           <div key={product.id} className={styles.card}>
-            <img src={product.img} alt={`Product ${product.id}`} />
+            <img src={product.img} alt={`${product.category} - Chuks Interior Decor Lagos`}  />
             <button className={styles.detailsBtn}><a href="/#contact">Make Enquiry</a></button>
           </div>
         ))}
@@ -189,10 +198,10 @@ const Products = () => {
         </div>
         <div className={styles.grp2}>
           <p>Quick Links</p>
-          <a href="">Home</a>
-          <a href="">About Us</a>
-         <a href="">Products</a>
-          <a href="">Contact</a>
+          <a href="/">Home</a>
+          <a href="/#about">About Us</a>
+         <a href="/#products">Products</a>
+          <a href="/#contact">Contact</a>
         </div>
 
         <div className={styles.grp3}>
