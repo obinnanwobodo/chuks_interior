@@ -652,119 +652,127 @@ object-fit: contain;
     text-align: center;
 }
 
-/* Footer section */
-.genfooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    height: auto; /* Adjust height to content */
-    color: #fefefe;
-    font-family: system-ui;
-    width: 100%;
-    margin-top: 40px;
-    padding: 40px 20px;
-    box-sizing: border-box;
+/* --- Responsive Footer Styles --- */
+@media (max-width: 768px) {
+    /* Footer section */
+    .genfooter {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        margin-top: 40px;
+        box-sizing: border-box;
+    }
+
+    .first3 {
+        flex-direction: column;
+        gap: 30px;
+        position: static;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .first3::after,
+    .centre::after {
+        display: none;
+    }
+
+    .grp1,
+    .grp2,
+    .grp3 {
+        flex-direction: column;
+        gap: 10px;
+        position: static;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .socialgen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0 0 0;
+    }
+
+    .instagen {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .insta1,
+    .insta2 {
+        text-align: center;
+    }
+
+    .insta2svg {
+        position: static;
+        margin: 0;
+    }
+
+    .insta2 {
+        position: static;
+    }
+
+    .grp2 a,
+    .grp3 a,
+    .addresses h3,
+    .numbergen a,
+    .emailgen a,
+    .centre a,
+    .items a {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .addresses,
+    .numbergen,
+    .emailgen {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .numbergen svg {
+        position: static;
+    }
+
+    .centre {
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    .items {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .lastset {
+        flex-direction: column;
+        position: static;
+        top: auto;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    .yearndserving {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .hero h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+    }
 }
-
-.first3 {
-    display: flex;
-    flex-direction: column; /* Stack columns vertically */
-    gap: 30px;
-    position: static;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-}
-
-.first3::after, .centre::after {
-    display: none; /* Hide horizontal lines on mobile */
-}
-
-.grp1, .grp2, .grp3 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: static;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-}
-
-.grp2 a, .grp3 a, .addresses h3, .numbergen a, .emailgen a, .centre a, .items a {
-    font-size: 14px;
-    text-align: center;
-}
-
-.addresses, .numbergen, .emailgen {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-}
-
-.insta2svg{
-  position: relative;
-  left: 3px;
-}
-
-.insta2{
-  position: relative;
-  left: 2px;
-}
-
-.iconcircle1{
-display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;     /* circle size */
-  height: 40px;    /* circle size */
-  border-radius: 50%;
-  background-color: #ffc10533;
-
-}
-
-
-
-
-.centre {
-    margin-top: 30px;
-    gap: 10px;
-}
-
-.items {
-    display: flex;
-    flex-direction: column; /* Stack links vertically */
-    gap: 10px;
-    align-items: center;
-}
-
-.lastset {
-    display: flex;
-    flex-direction: column;
-    position: static;
-    top: auto;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    gap: 10px;
-}
-
-.yearndserving {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-}
-
-.hero h1::after {
-right: auto;
-left: 50%;
-transform: translateX(-50%);
-margin-top: 60px;
-}
-
 
 }
 
@@ -834,88 +842,98 @@ margin-top: 60px;
     width: 180px;
   }
 
-  /* Footer section */
-  .genfooter {
-    
-    padding: 60px 40px;
-    
-  }
+@media (min-width: 769px) and (max-width: 1199px) {
+    /* Footer section */
+    .genfooter {
+        padding: 60px 40px;
+    }
 
-  .first3 {
-    flex-direction: row; /* Arrange columns horizontally */
-    gap: 80px;
-    position: relative;
-    bottom: auto;
-    align-items: flex-start;
-    text-align: left;
-  }
+    .first3 {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        position: relative;
+        bottom: auto;
+        align-items: flex-start;
+        text-align: left;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
 
-  .first3::after {
-    content: '';
-    position: absolute;
-    background-color: #806b2e;
-    width: 90%;
-    height: 0.1px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 320px;
-  }
+    .first3::after {
+        content: '';
+        position: absolute;
+        background-color: #806b2e;
+        width: 90%;
+        height: 0.1px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 320px;
+        display: none;
+    }
 
-  .grp1, .grp2, .grp3 {
-    align-items: flex-start;
-    position: static;
-    right: auto;
-  }
+    .grp1,
+    .grp2,
+    .grp3 {
+        align-items: flex-start;
+        position: static;
+        right: auto;
+        flex-grow: 1;
+        flex-basis: 30%;
+    }
 
-  .addresses, .numbergen, .emailgen {
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-  }
+    .addresses,
+    .numbergen,
+    .emailgen {
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
 
-  .numbergen svg {
-    position: static;
-  }
+    .numbergen svg {
+        position: static;
+    }
 
-  .centre {
-    margin-top: 60px;
-  }
+    .centre {
+        margin-top: 60px;
+    }
 
-  .centre::after {
-    content: '';
-    position: absolute;
-    background-color: #806b2e;
-    width: 80%;
-    height: 0.1px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 140px;
-  }
+    .centre::after {
+        content: '';
+        position: absolute;
+        background-color: #806b2e;
+        width: 80%;
+        height: 0.1px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 140px;
+        display: none;
+    }
 
-  .items {
-    flex-direction: row; /* Arrange links horizontally */
-    gap: 20px;
-  }
+    .items {
+        flex-direction: row;
+        gap: 20px;
+    }
 
-  .lastset {
-    flex-direction: row;
-    justify-content: space-between;
-    top: 80px;
-    width: 100%;
-    position: relative;
-  }
+    .lastset {
+        flex-direction: row;
+        justify-content: space-between;
+        top: 80px;
+        width: 100%;
+        position: relative;
+    }
 
-  .yearndserving {
-    flex-direction: row;
-    gap: 15px;
-    align-items: center;
-  }
+    .yearndserving {
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+    }
 
-  .hero h1::after {
-right: auto;
-left: 50%;
-transform: translateX(-50%);
-margin-top: 60px;
+    .hero h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+    }
 }
 
 }
