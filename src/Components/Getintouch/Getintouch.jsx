@@ -8,6 +8,10 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { SlSocialInstagram } from "react-icons/sl";
 import { IoMdTime } from "react-icons/io";
 import { RiSendPlaneLine } from "react-icons/ri";
+import { FaWhatsapp } from "react-icons/fa";
+
+
+
 
 const Getintouch = () => {
 
@@ -71,9 +75,13 @@ const Getintouch = () => {
         </div>
 
         <div className={styles.box2}>
-          <IoCallOutline />
+      
+      <div className={styles.box2icon}>
+            <IoCallOutline />
+         <div className={styles.box2icon2}> <FaWhatsapp /></div>
+      </div>
 
-          <h2 className={styles.cu1}>Call Us</h2>
+          <h2 className={styles.cu1}>Call & Whatsapp Us</h2>
 
           <a href="tel:07035368835" className={styles.num1}>
             {" "}
@@ -82,6 +90,10 @@ const Getintouch = () => {
           <a href="tel:08089579080" className={styles.num2}>
             {" "}
             08089579080
+          </a>
+          <a href="tel:07031875184" className={styles.num2}>
+            {" "}
+            07031875184
           </a>
         </div>
 

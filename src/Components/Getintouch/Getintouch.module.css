@@ -75,6 +75,26 @@ border-radius: 10px;
     margin-bottom: 20px;
 }
 
+.box2 a{
+  position: relative;
+  top: 3px;
+  
+}
+.box2 h2{
+  position: relative;
+  top: 2px;
+  
+}
+
+.box2icon{
+display: flex;
+gap: 20px;
+  position: relative;
+  top: 17px;
+}
+
+
+
 .box3 svg, .box4 svg{
 
     margin-bottom: 40px;
