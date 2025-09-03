@@ -285,8 +285,8 @@ margin-top: 40px;
 display: flex;
 gap: 180px;
 position: relative;
-bottom: 70px;
-
+bottom: 50px;
+padding-left: 40px;
 }
 
 
@@ -294,12 +294,12 @@ bottom: 70px;
  content: '';
  position: absolute;
  background-color: #806b2e;
- width: 95%;
+ width: 85%;
  height: 0.1px;
  justify-content: center;
  align-items: center;
  margin-top: 320px;
- margin-left: 20px;
+ margin-left: 50px;
 
 }
 
@@ -384,6 +384,46 @@ color: black;
     color: #ffc105;
     border-radius: 50%;
 }
+
+.socialgen{
+
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.insta2, .insta2svg{
+  position: relative;
+  right: 50px;
+  
+}
+
+
+.insta2svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;     /* circle size */
+  height: 40px;    /* circle size */
+  border-radius: 50%;
+  background-color: #ffc10533;
+margin-left: 27px;
+}
+
+
+.instagen{
+}
+
+.iconcircle1{
+display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;     /* circle size */
+  height: 40px;    /* circle size */
+  border-radius: 50%;
+  background-color: #ffc10533;
+
+}
+
 
 .iconcircle {
   display: inline-flex;
@@ -663,6 +703,30 @@ object-fit: contain;
     gap: 5px;
     align-items: center;
 }
+
+.insta2svg{
+  position: relative;
+  left: 3px;
+}
+
+.insta2{
+  position: relative;
+  left: 2px;
+}
+
+.iconcircle1{
+display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;     /* circle size */
+  height: 40px;    /* circle size */
+  border-radius: 50%;
+  background-color: #ffc10533;
+
+}
+
+
+
 
 .centre {
     margin-top: 30px;

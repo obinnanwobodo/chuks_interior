@@ -22,14 +22,26 @@ const Footer = () => {
           </p>
 
           <div className={styles.socialgen}>
-            <div className={styles.instagen}>
-             <div className={styles.iconcircle}>
-               <FaInstagram />
-             </div>
-              <a href="https://www.instagram.com/chuks_interior_decor_enterpris?igsh=MTN1cHF0OGhtemthcA==">
-                @chuks_interior_decor_enterpris
-              </a>
-            </div>
+              <div className={styles.instagen}>
+                  <div className={styles.iconcircle1}>
+                    <FaInstagram />
+                  </div>
+
+                  <div className={styles.insta1}>
+  <a href="https://www.instagram.com/chuks_interior_decor_enterpris?igsh=MTN1cHF0OGhtemthcA==">
+                    For Office Funitures & Merchandises - @chuks_interior_decor_enterprises
+                  </a>
+                  </div>
+                
+
+              
+                    <div className={styles.insta2svg}>
+                      <FaInstagram />
+                  </div>
+                  <a className={styles.insta2} href="https://www.instagram.com/chuks_interior_decor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    For Home Funitures & Merchandises - @chuks_interior_decor
+                  </a>
+                </div>
 
             <div className={styles.tiktokgen}>
              <div className={styles.iconcircle}>
@@ -72,7 +84,8 @@ const Footer = () => {
             <IoCallOutline />
             <div>
 <a href="tel:07035368835">07035368835</a> <br />
-            <a href="tel:08089579080">08089579080</a>
+            <a href="tel:08089579080">08089579080</a> <br />
+            <a href="tel:07031875184">07031875184</a> 
             </div>
             
           </div>

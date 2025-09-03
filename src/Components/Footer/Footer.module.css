@@ -15,7 +15,7 @@ display: flex;
 gap: 180px;
 position: relative;
 bottom: 70px;
-
+padding-left: 40px;
 }
 
 
@@ -23,7 +23,7 @@ bottom: 70px;
  content: '';
  position: absolute;
  background-color: #806b2e;
- width: 95%;
+ width: 85%;
  height: 0.1px;
  justify-content: center;
  align-items: center;
@@ -177,6 +177,25 @@ color: #fbf6e4cc;
     font-family: system-ui;
 
 }
+
+
+.socialgen{
+
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.iconcircle1{
+display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;     /* circle size */
+  height: 40px;    /* circle size */
+  border-radius: 50%;
+  background-color: #ffc10533;
+
+}
+
 
 .centre{
   display: flex;  
@@ -363,6 +382,16 @@ gap: 550px;
 .numbergen svg {
     position: static;
 }
+
+.insta1 a, .insta2 a{
+    display: flex;
+    flex-direction: column;
+ align-items: flex-start;
+ 
+
+}
+
+
 
 .centre {
     display: flex;
