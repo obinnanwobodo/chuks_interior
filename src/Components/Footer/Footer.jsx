@@ -81,8 +81,10 @@ const Footer = () => {
           </div>
 
           <div className={styles.numbergen}>
-            <IoCallOutline />
-            <div>
+           <div className={styles.callsvg}>
+             <IoCallOutline />
+           </div>
+            <div className={styles.num}>
 <a href="tel:07035368835">07035368835</a> <br />
             <a href="tel:08089579080">08089579080</a> <br />
             <a href="tel:07031875184">07031875184</a> 

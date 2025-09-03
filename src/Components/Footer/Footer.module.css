@@ -304,142 +304,237 @@ gap: 550px;
 
 /* RESPONSIVENESS */
 
+@media (min-width: 0px) and (max-width: 768px) {
+  .genfooter {
+    height: auto;
+    padding: 40px 10px;
+    text-align: center;
+  }
 
-@media (min-width:0px) and (max-width: 1120px) {
+  .first3 {
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 0;
+    position: static;
+    align-items: center;
+  }
 
-    .genfooter {
+  .first3::after {
+    display: none;
+  }
+
+  .grp1, .grp2, .grp3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+   .grp2, .grp3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    height: auto; /* Height is no longer fixed, adjusts to content */
-    color: #fefefe;
-    font-family: system-ui, sans-serif;
-    padding: 40px 20px;
-    box-sizing: border-box;
-}
-
-.first3 {
-    display: flex;
-    flex-direction: column; /* Stack columns vertically on mobile */
-    gap: 30px;
-    position: static;
     width: 100%;
-    align-items: center;
-    text-align: center;
-}
+    gap: 15px;
+    padding: 0 10px;
+    margin: 0 auto;
+    left: 0;
+  }
 
-.first3::after {
-    display: none; /* Hide the horizontal line on mobile */
-}
 
-.grp1, .grp2, .grp3 {
+  .grp1 {
+    margin-bottom: 20px;
+  }
+
+  .callsvg{
+    padding-bottom: 10px;
+  }
+
+  .socialgen {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    position: static;
     align-items: center;
-    text-align: center;
-    width: 100%;
-}
+    gap: 15px;
+    padding-left: 0;
+  }
 
-.cide {
-    font-size: 20px;
-    color: #ffc105;
-    font-weight: 700;
-}
-
-.trusted {
-    font-size: 14px;
-    color: #fbf6e4cc;
-}
-
-.grp2 p, .grp3 p {
-    font-size: 16px;
-    color: #ffc105;
-    font-weight: 500;
-}
-
-.grp2 a, .grp3 a {
-    font-size: 14px;
-    color: #fbf6e4cc;
-}
-
-.addresses, .numbergen, .emailgen {
+  /* Corrected rule to ensure instagen is always a column */
+  .instagen {
     display: flex;
-    flex-direction: column; /* Stack icon and text vertically if needed */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .tiktokgen, .facebookgen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .addresses, .numbergen, .emailgen {
+    flex-direction: column;
     gap: 5px;
     align-items: center;
-}
+  }
 
-.addresses h3, .numbergen a, .emailgen a {
-    font-size: 14px;
-    color: #fbf6e4cc;
+  .addresses h3 {
     text-align: center;
-}
+  }
 
-.numbergen svg {
-    position: static;
-}
-
-.insta1 a, .insta2 a{
-    display: flex;
-    flex-direction: column;
- align-items: flex-start;
- 
-
-}
-
-
-
-.centre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    gap: 15px;
-}
-
-.centre::after {
-    display: none; /* Hide the horizontal line on mobile */
-}
-
-.items {
-    display: flex;
-    flex-direction: column; /* Stack links vertically */
-    gap: 10px;
-    align-items: center;
-}
-
-.lastset {
-    display: flex;
+  .lastset {
     flex-direction: column;
     position: static;
     top: auto;
-    width: 100%;
     text-align: center;
     margin-top: 30px;
-    gap: 10px;
-}
+    gap: 15px;
+    align-items: center;
+  }
 
-.yearndserving {
-    display: flex;
+  .yearndserving {
     flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lastset h2 {
+    padding-top: 0;
+  }
+
+  .iconndwa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
+  }
+
+  .centre {
+    margin-top: 30px;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .centre::after {
+    display: none;
+  }
+
+  .items {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
 }
 
-.lastset h2, .lastset h3, .lastset p {
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
+
+
+
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1050px) {
+    .genfooter {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .first3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        position: static;
+        bottom: auto;
+        padding: 0;
+        gap: 2rem; /* Add some space between the groups */
+    }
+
+    .first3::after {
+        content: '';
+        position: absolute;
+        background-color: #806b2e;
+        width: 90%;
+        height: 0.1px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 320px;
+        display: none;
+    }
+
+    .grp1, .grp2, .grp3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        right: auto;
+        text-align: center;
+        width: auto;
+        flex-grow: 1;
+    }
+
+    .grp2 p, .grp3 p {
+        text-align: center;
+    }
+
+    .grp2 a, .grp3 a {
+        text-align: center;
+    }
+
+    .socialgen {
+        padding: 10px 0;
+        justify-content: center;
+    }
+
+    .centre {
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .centre::after {
+        content: '';
+        position: absolute;
+        background-color: #806b2e;
+        width: 80%;
+        height: 0.1px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 140px;
+        display: none;
+    }
+
+    .lastset {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        top: auto;
+        margin-top: 50px;
+    }
+
+    .yearndserving {
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .yearndserving h3, .yearndserving p {
+        padding: 0;
+    }
+
+    .lastset h2 {
+        padding-top: 0;
+    }
 }
-
-
-}
-
-
 
 
 
