@@ -105,11 +105,7 @@ const Products = () => {
           name="description"
           content="Explore premium interiors and furniture from Chuks Interior Decor Enterprise in Lagos — executive desks, office chairs, dining tables, stylish décor, and quality merchandise."
         />
-
-        <link
-          rel="canonical"
-          href="https://www.chuksinteriorenterprise.com.ng/"
-        />
+        <link rel="canonical" href="https://www.chuksinteriorenterprise.com.ng/product/" />
 
       </Head>
 
