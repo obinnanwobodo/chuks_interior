@@ -6,6 +6,7 @@ import Products from "@/Components/Products/Products";
 import Getintouch from "@/Components/Getintouch/Getintouch";
 import Footer from "@/Components/Footer/Footer";
 import Head from "next/head" 
+import Link from "next/link";
 
 
 
@@ -22,8 +23,10 @@ export default function Home() {
     content="Transform your space with Chuks Interior Decor. We provide elegant interiors, premium furniture, and stylish home solutions and merchandise across Lagos."
   />
 
-    
-        
+<link rel="canonical" href="https://www.chuksinteriorenterprise.com.ng/"/>
+
+ 
+
 </Head>
 
       <div id="navbar">

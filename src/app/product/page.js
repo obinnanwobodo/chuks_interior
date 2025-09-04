@@ -12,6 +12,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import Head from "next/head";
+import Link from "next/link";
 
 
 const categories = [
