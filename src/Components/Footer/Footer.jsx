@@ -107,12 +107,12 @@ const Footer = () => {
 <h2>Our Product Categories</h2>
 
 <div className={styles.items}>
-<a href="/product">Home Furnitures</a>
-<a href="/product">Executive Desks</a>
-<a href="/product">Office Chairs</a>
-<a href="/product">Quality Tables</a>
-<a href="/product">Dining Tables</a>
-<a href="/product">Home Merchandise</a>
+<a href="product">Home Furnitures</a>
+<a href="product">Executive Desks</a>
+<a href="product">Office Chairs</a>
+<a href="product">Quality Tables</a>
+<a href="product">Dining Tables</a>
+<a href="product">Home Merchandise</a>
 </div>
 
       </div>
