@@ -75,6 +75,36 @@ const productCategoryMap = {
   45: "Office Funiture & Chairs", // product45.jpg
   46: "Office Funiture & Chairs", // product46.jpg
   47: "Office Funiture & Chairs", // product47.jpg
+  48: "Home Furnitures", // product34.jpg
+  49: "Dining Tables", // product35.jpg
+  50: "Office Funiture & Chairs", // product35.jpg
+  51: "Dining Tables", // product35.jpg
+  52: "Home Furnitures", // product35.jpg
+  53: "Dining Tables", // product35.jpg
+  54: "Dining Tables", // product35.jpg
+  55: "Dining Tables", // product35.jpg
+  56: "Dining Tables", // product35.jpg
+  57: "Dining Tables", // product35.jpg
+  58: "Dining Tables", // product35.jpg
+  59: "Dining Tables", // product35.jpg
+  60: "Dining Tables", // product35.jpg
+  61: "Dining Tables", // product35.jpg
+  62: "Dining Tables", // product35.jpg
+  63: "Dining Tables", // product35.jpg
+  64: "Home Merchandise", // product35.jpg
+  65: "Home Furnitures", // product35.jpg
+  66: "Home Merchandise", // product35.jpg
+  67: "Home Furnitures", // product35.jpg
+  68: "Home Furnitures", // product35.jpg
+  69: "Home Furnitures", // product35.jpg
+  70: "Home Furnitures", // product35.jpg
+  71: "Dining Tables", // product35.jpg
+  72: "Home Furnitures", // product35.jpg
+  73: "Dining Tables", // product35.jpg
+  74: "Dining Tables", // product35.jpg
+  75: "Home Furnitures", // product35.jpg
+  76: "Home Furnitures", // product35.jpg
+  77: "Dining Tables", // product35.jpg
 };
 
 
@@ -82,7 +112,7 @@ const productCategoryMap = {
 
 
 // Generate 47 product images automatically
-const productImages = Array.from({ length: 47 }, (_, i) => ({
+const productImages = Array.from({ length: 77 }, (_, i) => ({
   id: i + 1,
   category: productCategoryMap[i + 1] || "All Products", // default, you can later assign real categories
   img: `/Products/Product${i + 1}.jpg`
